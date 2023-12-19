@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+.cloud{
+    /* animation-name: cloud;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+    
+    position: relative;
+    z-index: 1;
+    animation: cloud 80s ease infinite;
+}
+.cloud:nth-child(2){
+    width: 200px;
+    height: 150px;
+    opacity: 0.6;
+    position: absolute;
+    z-index: 0;
+    top: 100px;
+    left: 300px;
+    animation: cloud 60s ease infinite;
+}
+@keyframes cloud{
+    from{
+        transform: translateX(-250px);
+    }
+    to{
+        transform: translateX(2200px);
+    }
+}
+.clouds{
+    background-color: rgba(29, 161, 204, 0.686);
+    height: 33%;
+}
+.green{
+    height: 33%;
+    height: 200px;
+    background-color: green;
+}
+.road{
+    position: relative;
+    height: 34%;
+    height: 300px;
+    background-color: rgb(58, 56, 56);
+}
+
+
+.bike{
+    animation: bike 10s ease infinite;
+}
+.dashed{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin:  auto 0;
+    height: 10px;
+    border: 10px dashed #fff;
+
+}
+@keyframes bike{
+    from{
+        transform: translateX(-250px);
+    }
+    to{
+        transform: translateX(2200px);
+    }
+}
+.mario{
+    position: absolute;
+    bottom: 0;
+    animation: mario 10s ease infinite;
+}
+@keyframes mario{
+    to{
+        transform: translateX(-550px);
+    }
+    from{
+        transform: translateX(1400px);
+    }
+}
